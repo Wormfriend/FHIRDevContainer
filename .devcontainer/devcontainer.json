@@ -16,7 +16,7 @@
 			]
 		}
 	},
-	"workspaceMount": "source=/Users/frederikvoigt/Documents/Projekte/SushiDevContainer/fish-exercise,target=/workspaces,type=bind",
+	"workspaceMount": "source=./fish-exercise,target=/workspaces,type=bind",
     "workspaceFolder": "/workspaces"
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
