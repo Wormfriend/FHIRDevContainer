@@ -24,4 +24,3 @@ publisher -source [source] -destination [dest] (-tx [url])
 ```bash
 git clone https://github.com/FSHSchool/courses-fsh-seminar-exercise.git
 ```
-
