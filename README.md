@@ -19,7 +19,7 @@ publisher -source [source] -destination [dest] (-tx [url])
 ## Setup [FHIR Exercise](https://fshschool.org/courses/fsh-seminar)
 
 1. Under the docker desktop settings add the **workspaces** directory as a file-sharing ressource
-2. Clone the fish seminar exercise (locally or within the remote container) into workspaces
+2. Clone the fish seminar exercise (locally or within the remote container) into **workspaces**
 
 ```bash
 git clone https://github.com/FSHSchool/courses-fsh-seminar-exercise.git
