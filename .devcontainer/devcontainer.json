@@ -17,7 +17,7 @@
 			]
 		}
 	},
-	"workspaceMount": "source=./workspace,target=/workspaces,type=bind",
+	"workspaceMount": "source=./workspaces,target=/workspaces,type=bind",
     "workspaceFolder": "/workspaces"
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
