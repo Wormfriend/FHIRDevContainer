@@ -3,6 +3,7 @@
 ## Introduction
 
 This repo contains a simple devcontainer config, as well as a Dockerfile setting up an environment containing sushi and the ig publisher.
+The container also contains all prerequisits needed for completing the [fsh-exercise](https://fshschool.org/courses/).
 
 ```bash
 # Execute publisher
