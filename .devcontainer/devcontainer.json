@@ -12,11 +12,12 @@
 		"vscode": {
 			"extensions": [
 				"Yannick-Lagger.vscode-fhir-tools",
-				"MITRE-Health.vscode-language-fsh"
+				"MITRE-Health.vscode-language-fsh",
+				"jebbs.plantuml"
 			]
 		}
 	},
-	"workspaceMount": "source=./fish-exercise,target=/workspaces,type=bind",
+	"workspaceMount": "source=./workspace,target=/workspaces,type=bind",
     "workspaceFolder": "/workspaces"
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
