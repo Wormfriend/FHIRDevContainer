@@ -15,12 +15,13 @@ publisher -source [source] -destination [dest] (-tx [url])
 1. Install [docker desktop](https://docs.docker.com/desktop/)
 2. Clone the FHIRDevContainer Repo
 3. Install the [DevContainers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension within VSCode
-4. Start the DevContainer
+4. Under the docker desktop settings add the **workspaces** directory as a file-sharing ressource
+5. Start the DevContainer
 
-## Setup [FHIR Exercise](https://fshschool.org/courses/fsh-seminar)
+## Setup [FSH Seminar](https://fshschool.org/courses/fsh-seminar)
 
-1. Under the docker desktop settings add the **workspaces** directory as a file-sharing ressource
-2. Clone the fish seminar exercise (locally or within the remote container) into **workspaces**
+1. The fsh seminar can be found under /fsh_seminar
+2. From thereon follow [the seminar](https://fshschool.org/courses/fsh-seminar/setup.html) starting from bulletpoint no 7
 
 ```bash
 git clone https://github.com/FSHSchool/courses-fsh-seminar-exercise.git
