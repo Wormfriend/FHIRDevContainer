@@ -2,6 +2,7 @@ FROM node:latest
 RUN apt update
 RUN apt -y install openjdk-17-jdk openjdk-17-demo openjdk-17-doc openjdk-17-jre-headless openjdk-17-source
 RUN apt -y install ruby-full build-essential zlib1g-dev
+RUN apt -y install graphviz
 RUN npm install -g fsh-sushi
 WORKDIR /fhir-ig-publisher
 RUN wget https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
