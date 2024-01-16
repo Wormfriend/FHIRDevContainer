@@ -13,7 +13,12 @@ RUN npm install -g fsh-sushi
 
 WORKDIR /fhir-ig-publisher
 RUN wget https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
-RUN echo "alias publisher='java -jar /fhir-ig-publisher/publisher.jar'" >> ~/.bashrc
+
+WORKDIR /root/.config/fish/functions
+RUN echo "function publisher --wraps='java -jar /fhir-ig-publisher/publisher.jar' --description 'alias publisher=java -jar /fhir-ig-publisher/publisher.jar'\n\
+    java -jar /fhir-ig-publisher/publisher.jar $argv\n\                   
+end" > publisher.fish
+
 RUN echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
 RUN echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
 RUN echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
