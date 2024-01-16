@@ -28,7 +28,6 @@ RUN ./_updatePublisher.sh
 WORKDIR /scripts
 RUN wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
 RUN bash ./dotnet-install.sh --version latest
-RUN ./dotnet-install.sh --version latest
 RUN echo 'export DOTNET_ROOT="$HOME/.dotnet"' >> ~/.bashrc
 RUN echo 'export PATH="$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools"' >> ~/.bashrc
 RUN $HOME/.dotnet/dotnet tool install -g firely.terminal
